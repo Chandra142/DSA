@@ -39,8 +39,10 @@
 using namespace std;
 
 int main(){
-    cout<<"****\n***\n**\n*";
-    
+    cout<<"****\n***\n**\n*\n";
+    for(int i = 0;i<5;i++){
+        cout<<i;
+    }
 }
 
 
