@@ -142,24 +142,86 @@ using namespace std;
 
 // ++To check the prime number in the given range as n++++++++++++++++++
 
-bool isPrime(int n){
-    if(n==1){
-        return true;
+// bool isPrime(int n){
+//     if(n==1){
+//         return true;
+//     }
+//     for(int i = 2; i*i<=n; i++){
+//         if(n%i == 0){
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+// void allPrime(int n){
+//     for(int i = 2; i<=n; i++){
+//         if(isPrime(i)){
+//             cout<<i<<" ";
+//         }
+//     }
+// }
+// int main(){
+//     allPrime(30);
+// }
+
+
+// int main()
+// {
+//     int n;//121
+//     cout<<"Enter the number: ";
+//     cin>>n;
+//     int reverse=0;
+//     while(n>0)
+//     {
+//         int lastdigit=n%10;
+//         reverse=reverse*10+lastdigit;
+//         n/=10;
+//     }
+//     cout<<reverse;
+
+
+// }
+
+
+// int sumOfDigit(int n)
+// {
+//     int sum=0;
+//     while(n>0)
+//     {
+//         int d=n%10;
+//         sum+= d;
+//         n/=10;
+//     }
+//     return sum;
+// }
+// int main()
+// {
+//     // int n;
+//     // cin>>n;
+//     cout<<sumOfDigit(12345);
+
+// }
+
+// #include<cmath>
+// int powerOf(int a,int b)
+// {
+//     int res=pow(a,2)+pow(b,2)+2*a*b;
+//     return res;
+// }
+// int main()
+// {
+    
+//     cout<<powerOf(2,3);
+// }
+char character(char ch)
+{
+    int res  = ch+1;
+    if(ch=='z'){
+        res  = 'a';
     }
-    for(int i = 2; i*i<=n; i++){
-        if(n%i == 0){
-            return false;
-        }
-    }
-    return true;
+    return res;
 }
-void allPrime(int n){
-    for(int i = 2; i<=n; i++){
-        if(isPrime(i)){
-            cout<<i<<" ";
-        }
-    }
-}
-int main(){
-    allPrime(30);
+int main()
+{
+    cout<<character<<(int)('d');
 }
